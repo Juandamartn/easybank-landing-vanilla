@@ -147,7 +147,9 @@ header {
     grid-column: 3 / 5;
     background-image: url(../img/bg-intro-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 0 /*-17.2em*/ 80%;
+    background-position: 0
+        /*-17.2em*/
+        80%;
     overflow: hidden;
 }
 
@@ -371,10 +373,13 @@ footer {
 }
 
 /* Hovers */
-/* TODO: Changing the border color to a gradient when hover */
 .header__menu__items li a:hover {
     color: var(--darkBlue);
-    border-bottom: 5px solid var(--limeGreen);
+    border-bottom: 5px solid transparent !important;
+    -o-border-image: linear-gradient(to right, var(--limeGreen), var(--brightCyan));
+    border-image: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--brightCyan)));
+    border-image: linear-gradient(to right, var(--limeGreen), var(--brightCyan));
+    border-image-slice: 1%;
 }
 
 button:hover {
