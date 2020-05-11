@@ -145,12 +145,13 @@ header {
     height: 100%;
     grid-column: 3 / 5;
     background-image: url(../img/bg-intro-desktop.svg);
-    background-position: 0em -17.2em;
+    background-repeat: no-repeat;
+    background-position: 0 /*-17.2em*/ 80%;
     overflow: hidden;
 }
 
 .main__mockup {
-    width: 635px;
+    width: 44%;
     position: absolute;
     top: -1.4em;
     right: 0em;

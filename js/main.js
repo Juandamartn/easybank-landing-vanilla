@@ -3,7 +3,7 @@ var menu = document.getElementById('header__menu'),
     hamburger = document.getElementById('header__hamburger');
 iconMenu = document.querySelector('.header__hamburger img');
 
-if (window.screen.width <= 425) {
+if (window.screen.width <= 1024) {
     menu.classList.toggle('hidden');
 }
 
