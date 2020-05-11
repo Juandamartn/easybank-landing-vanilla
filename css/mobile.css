@@ -1,4 +1,7 @@
 @media screen and (max-width: 375px) {
+    :root {
+        --darkBlue: hsl(233, 26%, 24%);
+    }
 
     header,
     .main__overview__info,
@@ -24,17 +27,56 @@
         display: flex;
         width: 100vw;
         justify-content: space-between;
-        padding-top: 1em;
+        padding-top: 1.5em;
         padding-bottom: 1em;
     }
 
-    .header__menu,
     .header__request-invite {
         display: none;
     }
 
     .header__hamburger {
         display: block;
+        height: 100%;
+    }
+
+    .header__menu__items {
+        position: fixed;
+        width: 90vw;
+        left: 0;
+        margin: 2.5em 1em;
+        padding: 1.2em 0 0 0;
+        background-color: white;
+        border-radius: 5px;
+        flex-direction: column;
+        text-align: center;
+        z-index: 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+    .header__menu__items li {
+        height: 2.7em;
+    }
+
+    .header__menu__items li a {
+        font-size: 1em;
+        color: var(--darkBlue);
+    }
+
+    .modal {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(180deg, var(--darkBlue) 0%, rgba(0, 0, 0, 0) 100%);
+        transform: translate(-1.5em, 21.2em);
+        z-index: 1;
+        -webkit-transform: translate(0, -3.9em);
+        -moz-transform: translate(-1.5em, 21.2em);
+        -ms-transform: translate(-1.5em, 21.2em);
+        -o-transform: translate(-1.5em, 21.2em);
     }
 
     /* Overview section */
@@ -89,6 +131,10 @@
 
     .main__advantages__info h1 {
         font-size: 2em;
+    }
+
+    .main__advantages__info p {
+        width: 100%;
     }
 
     .main__advantages__container {
@@ -156,5 +202,28 @@
 
     .attribution a {
         font-size: 14px;
+    }
+
+    /* Hovers */
+    .header__menu__items li a:hover {
+        color: var(--darkBlue);
+        border-bottom: none;
+    }
+
+    button:hover {
+        opacity: 0.5;
+    }
+
+    .latest-articles__container__item h3:hover {
+        color: var(--limeGreen);
+        cursor: pointer;
+    }
+
+    .footer__nav__items a:hover {
+        color: var(--limeGreen);
+    }
+
+    .footer__social__icons svg:hover path {
+        fill: var(--limeGreen);
     }
 }
