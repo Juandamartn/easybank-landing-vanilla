@@ -1,0 +1,160 @@
+@media screen and (max-width: 375px) {
+
+    header,
+    .main__overview__info,
+    .main__advantages,
+    .main__latest-articles,
+    footer {
+        padding: 0 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 1em 2em;
+    }
+
+    p,
+    a {
+        font-size: 0.8em;
+    }
+
+    /* Header */
+
+    header {
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .header__menu,
+    .header__request-invite {
+        display: none;
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+
+    /* Overview section */
+
+    .main__overview {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 16em auto;
+    }
+
+    .main__overview__background {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-image: url(../img/bg-intro-mobile.svg);
+        background-position: 0 -2.9em;
+        background-repeat: no-repeat;
+    }
+
+    .main__overview__background img {
+        width: 100%;
+        transform: translate(0, -7.3em);
+        -webkit-transform: translate(0, -7.3em);
+        -moz-transform: translate(0, -7.3em);
+        -ms-transform: translate(0, -7.3em);
+        -o-transform: translate(0, -7.3em);
+    }
+
+    .main__overview__info {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+    }
+
+    .main__overview__info h1 {
+        font-size: 2em;
+    }
+
+    .main__overview__info button {
+        margin-bottom: 2em;
+    }
+
+    /* Advantages section*/
+
+    .main__advantages {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    .main__advantages__info {
+        text-align: center;
+    }
+
+    .main__advantages__info h1 {
+        font-size: 2em;
+    }
+
+    .main__advantages__container {
+        flex-direction: column;
+    }
+
+    .advantages__container__item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    /* Latest articles section */
+
+    .main__latest-articles {
+        text-align: center;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .main__latest-articles h1 {
+        font-size: 2em;
+    }
+
+    .main__latest-articles__container {
+        flex-direction: column;
+    }
+
+    .latest-articles__container__item {
+        width: 100%;
+        text-align: left;
+        padding-bottom: 3em;
+        margin-bottom: 1.5em;
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    .footer__social {
+        height: 4em;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .footer__nav__items {
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .footer__copy {
+        text-align: center;
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .attribution a {
+        font-size: 14px;
+    }
+}
