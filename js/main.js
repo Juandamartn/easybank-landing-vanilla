@@ -3,13 +3,13 @@ var menu = document.getElementById('header__menu'),
     hamburger = document.getElementById('header__hamburger');
 iconMenu = document.querySelector('.header__hamburger img');
 
-if (window.screen.width <= 375) {
+if (window.screen.width <= 425) {
     menu.classList.toggle('hidden');
 }
 
 hamburger.addEventListener('click', function () {
     if (modal.classList.contains('hidden')) {
-        iconMenu.src = '../img/icon-close.svg';
+        iconMenu.src = './img/icon-close.svg';
     } else {
         iconMenu.src = './img/icon-hamburger.svg';
     }
