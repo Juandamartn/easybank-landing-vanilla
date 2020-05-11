@@ -146,22 +146,26 @@ header {
     grid-column: 3 / 5;
     background-image: url(../img/bg-intro-desktop.svg);
     background-position: 0em -17.2em;
+    overflow: hidden;
 }
 
-.main__overview__background img {
-    transform: translate(12.5em, -6.7em);
-    -webkit-transform: translate(12.5em, -6.7em);
-    -moz-transform: translate(12.5em, -6.7em);
-    -ms-transform: translate(12.5em, -6.7em);
-    -o-transform: translate(12.5em, -6.7em);
+.main__mockup {
+    width: 635px;
+    position: absolute;
+    top: -1.4em;
+    right: 0em;
+    z-index: 0;
+    overflow: hidden visible;
 }
 
 /* Advantages section */
 
 .main__advantages {
+    position: relative;
     background-color: var(--lightGrayishBlue);
     padding-top: 5em;
     padding-bottom: 5em;
+    z-index: -1;
 }
 
 .main__advantages__info h1,
