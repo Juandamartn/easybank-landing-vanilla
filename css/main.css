@@ -28,3 +28,182 @@ button:focus {
     outline: none;
 }
 
+header,
+.main__advantages,
+.main__latest-articles {
+    padding: 0 6em;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+button {
+    background: var(--limeGreen);
+    background: linear-gradient(90deg, var(--limeGreen) 0%, var(--brightCyan) 100%);
+    color: var(--white);
+    border: none;
+    padding: 0.8em 2.2em;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--darkBlue);
+    font-weight: 400;
+}
+
+p,
+pre {
+    color: var(--grayishBlue);
+}
+
+/* Header */
+
+header {
+    position: relative;
+    display: flex;
+    padding-top: 1.5em;
+    padding-bottom: 1.1em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.header__menu__items {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu__items li {
+    list-style: none;
+}
+
+.header__menu__items li a {
+    color: var(--grayishBlue);
+    padding-bottom: 1.7em;
+}
+
+.modal,
+.header__hamburger {
+    display: none;
+}
+
+/* Overview section */
+
+.main__overview {
+    position: relative;
+    display: grid;
+    height: 36em;
+    grid-template-columns: 6em 32% auto 6em;
+    grid-template-rows: 100%;
+    background-color: var(--veryLightGray);
+    z-index: 0;
+}
+
+.main__overview__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2 / 3;
+}
+
+.main__overview__info h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.main__overview__info p {
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+.main__overview__background {
+    height: 100%;
+    grid-column: 3 / 5;
+    background-image: url(../img/bg-intro-desktop.svg);
+    background-position: 0em -17.2em;
+}
+
+.main__overview__background img {
+    transform: translate(12.5em, -6.7em);
+    -webkit-transform: translate(12.5em, -6.7em);
+    -moz-transform: translate(12.5em, -6.7em);
+    -ms-transform: translate(12.5em, -6.7em);
+    -o-transform: translate(12.5em, -6.7em);
+}
+
+/* Advantages section */
+
+.main__advantages {
+    background-color: var(--lightGrayishBlue);
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.main__advantages__info h1 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+.main__advantages__info pre {
+    line-height: 1.5em;
+    padding-bottom: 4em;
+}
+
+.main__advantages__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__icon {
+    margin-bottom: 2em;
+}
+
+.advantages__container__item {
+    width: 14.9em;
+}
+
+.advantages__container__item h2 {
+    margin-bottom: 1.5em;
+    font-size: 1.4em;
+}
+
+.advantages__container__item p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+#item04 {
+    margin-right: 0;
+}
+
+/* Hovers */
+/* TODO: Changing the border color to a gradient when hover */
+.header__menu__items li a:hover {
+    color: var(--darkBlue);
+    border-bottom: 5px solid var(--limeGreen);
+}
+
+button:hover {
+    opacity: 0.5;
+}
